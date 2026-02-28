@@ -1,0 +1,39 @@
+[project]
+name = "holybiblepca"
+version = "0.1.0"
+description = "Exploratory Bible-space visualization project with PCA/UMAP"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "scipy>=1.12",
+  "scikit-learn>=1.4",
+  "umap-learn>=0.5",
+  "matplotlib>=3.8",
+  "seaborn>=0.13",
+  "plotly>=5.20",
+]
+
+[project.optional-dependencies]
+notebook = [
+  "jupyterlab>=4.1",
+  "ipykernel>=6.29",
+]
+media = [
+  "imageio>=2.34",
+  "imageio-ffmpeg>=0.4",
+]
+graph = [
+  "networkx>=3.2",
+]
+export = [
+  "tqdm>=4.66",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+default-groups = []
